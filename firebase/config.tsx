@@ -9,13 +9,13 @@ import { getAnalytics } from "firebase/analytics";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCQS0L81BYZA84lJKF4QlncBjGkK1ro-uE",
+  apiKey: process.env.EXPO_PUBLIC_API_KEY,
   authDomain: "p2pclouds-crm.firebaseapp.com",
   databaseURL: "https://p2pclouds-crm-default-rtdb.firebaseio.com",
   projectId: "p2pclouds-crm",
   storageBucket: "p2pclouds-crm.appspot.com",
   messagingSenderId: "920690160890",
-  appId: "1:920690160890:web:e992ade68d3bdc355c4543",
+  appId: process.env.EXPO_PUBLIC_APP_ID,
 };
 
 // Initialize Firebase
